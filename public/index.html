@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10b981">
+    <meta name="description" content="Professional machinery service code calculator for Ropa and Holmer equipment">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="sa3edservice">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/sa3edservice/manifest.json">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%2310b981' width='192' height='192'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'%3ESC%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%2310b981' width='192' height='192'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'%3ESC%3C/text%3E%3C/svg%3E">
+    
+    <title>Mohamed Saeed - Service Codes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: linear-gradient(135deg, #0f172a 0%, #1a1f3a 100%); display: flex; align-items: center; justify-content: center; }
+        .container { width: 100%; max-width: 500px; padding: 20px; }
+        .card { background: rgba(30, 41, 59, 0.8); border-radius: 16px; padding: 40px 30px; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        .icon { text-align: center; margin-bottom: 20px; }
+        .lock-icon { width: 80px; height: 80px; margin: 0 auto; background: #10b981; border-radius: 20px; display: flex; align-items: center; justify-content: center; }
+        .lock-icon svg { width: 50px; height: 50px; }
+        h1 { text-align: center; color: #ffffff; font-size: 2rem; margin: 20px 0 10px; }
+        .subtitle { text-align: center; color: #94a3b8; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; color: #cbd5e1; margin-bottom: 8px; font-weight: 500; }
+        input { width: 100%; padding: 12px 16px; border: none; border-radius: 8px; background: rgba(51, 65, 85, 0.5); color: #ffffff; font-size: 1rem; }
+        input::placeholder { color: #64748b; }
+        button { width: 100%; padding: 12px; background: #3b82f6; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+        button:hover { background: #2563eb; }
+        .info { background: rgba(15, 23, 42, 0.5); border-radius: 8px; padding: 16px; color: #cbd5e1; text-align: center; font-size: 0.9rem; line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <div class="lock-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M12 1C6.48 1 2 5.48 2 11v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V11c0-5.52-4.48-10-10-10zm0 20H4V11c0-4.42 3.58-8 8-8s8 3.58 8 8v10h-8zm3.5-9.5H8.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h7c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1>Mohamed Saeed</h1>
+            <p class="subtitle">Service Solutions - Access Required</p>
+            <form id="authForm">
+                <div class="form-group">
+                    <label>Enter Password</label>
+                    <input type="password" id="password" placeholder="Enter access password" required>
+                </div>
+                <button type="submit">🔓 Unlock Access</button>
+            </form>
+            <div class="info">
+                <p>Professional machinery service code calculator for Ropa and Holmer equipment</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sa3edservice/sw.js', { scope: '/sa3edservice/' })
+                .then(registration => console.log('SW registered:', registration))
+                .catch(err => console.log('SW registration failed:', err));
+        }
+
+        // Authentication
+        document.getElementById('authForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            if (password === '01011126104') {
+                alert('Access Granted!');
+                // Redirect to main app or load content
+                window.location.href = '/sa3edservice/app.html';
+            } else {
+                alert('Incorrect password');
+            }
+        });
+    </script>
+</body>
+</html>
