@@ -1,9 +1,9 @@
 {
-  "name": "AGRO POWER - Service Codes",
-  "short_name": "ServiceCode",
+  "name": "Mohamed Saeed - Service Codes",  "short_name": "sa3edservice",
+  
   "description": "Professional machinery service code calculator for Ropa and Holmer equipment",
-  "start_url": "/servicecode/",
-  "scope": "/servicecode/",
+  "start_url": "/sa3edservice/",
+  "scope": "/sa3edservice/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#0f172a",
