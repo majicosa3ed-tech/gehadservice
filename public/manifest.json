@@ -1,8 +1,7 @@
-      {
-              "version": "2.0",
-        
-  "name": "Mohamed Saeed - Service Codes",  "short_name": "sa3edservice",
-  
+{
+  "version": "2.1",
+  "name": "Mohamed Saeed - Service Codes",
+  "short_name": "sa3edservice",
   "description": "Professional machinery service code calculator for Ropa and Holmer equipment",
   "start_url": "/sa3edservice/",
   "scope": "/sa3edservice/",
@@ -13,27 +12,27 @@
   "categories": ["productivity", "utilities"],
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%2310b981' width='192' height='192'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>SC</text></svg>",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%2310b981' width='192' height='192'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'%3ESC%3C/text%3E%3C/svg%3E",
       "sizes": "192x192",
       "type": "image/svg+xml",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%2310b981' width='512' height='512'/><text x='50%' y='50%' font-size='200' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>SC</text></svg>",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%2310b981' width='512' height='512'/%3E%3Ctext x='50%25' y='50%25' font-size='200' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'%3ESC%3C/text%3E%3C/svg%3E",
       "sizes": "512x512",
       "type": "image/svg+xml",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
-  ]
-    "screenshots": [
-          {
-      "src": "/intro.jpg",
+  ],
+  "screenshots": [
+    {
+      "src": "/sa3edservice/intro.jpg",
       "sizes": "540x720",
       "type": "image/jpeg",
       "form_factor": "narrow"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%230f1729' width='1280' height='720'/><text x='640' y='360' font-size='60' fill='%23ffffff' text-anchor='middle' dy='.3em'>Mohamed Saeed Service Codes</text></svg>",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'%3E%3Crect fill='%230f1729' width='1280' height='720'/%3E%3Ctext x='640' y='360' font-size='60' fill='%23ffffff' text-anchor='middle' dy='.3em'%3EMohamed Saeed Service Codes%3C/text%3E%3C/svg%3E",
       "sizes": "1280x720",
       "type": "image/svg+xml",
       "form_factor": "wide"
