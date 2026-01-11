@@ -1,4 +1,5 @@
-{
+      {
+        
   "name": "Mohamed Saeed - Service Codes",  "short_name": "sa3edservice",
   
   "description": "Professional machinery service code calculator for Ropa and Holmer equipment",
@@ -21,6 +22,20 @@
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any"
+    }
+  ]
+    "screenshots": [
+          {
+      "src": "/intro.jpg",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%230f1729' width='1280' height='720'/><text x='640' y='360' font-size='60' fill='%23ffffff' text-anchor='middle' dy='.3em'>Mohamed Saeed Service Codes</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
     }
   ]
 }
