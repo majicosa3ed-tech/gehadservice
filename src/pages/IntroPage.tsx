@@ -41,7 +41,7 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
                 <Lock className="w-12 h-12 text-blue-400" />
               </div>
             </div>
-            <h1 className="text-3xl font-bold text-white mb-2">Mohamed Saeed</h1>
+            <h1 className="text-3xl font-bold text-white mb-2">Gehad Elhady</h1>
             <p className="text-slate-300">Service Solutions - Access Required</p>
           </div>
 
@@ -110,7 +110,7 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
       >
         <div className="text-center max-w-2xl px-6 mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-amber-400 mb-4 tracking-tight">
-            Mohamed Saeed
+            Gehad Elhady
           </h1>
           <p className="text-xl md:text-2xl text-slate-200 font-light mb-12">
             Machinery Service Solutions
