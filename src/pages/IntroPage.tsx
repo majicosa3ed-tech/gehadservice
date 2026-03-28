@@ -10,7 +10,7 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const DEFAULT_PASSWORD = '01011126104';
+  const DEFAULT_PASSWORD = '01280001800';
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
