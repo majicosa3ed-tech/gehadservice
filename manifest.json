@@ -9,14 +9,6 @@
   "background_color": "#0f172a",
   "theme_color": "#10b981",
   "categories": ["productivity", "utilities"],
-  "screenshots": [
-    {
-      "src": "https://via.placeholder.com/540x720?text=GehadService",
-      "sizes": "540x720",
-      "type": "image/png",
-      "form_factor": "narrow"
-    }
-  ],
   "icons": [
     {
       "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%2310b981' width='192' height='192'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>GE</text></svg>",
@@ -41,13 +33,11 @@
     {
       "name": "Ropa Calculator",
       "short_name": "Ropa",
-      "description": "Quick access to Ropa service code calculator",
       "url": "/gehadservice/?tab=ropa"
     },
     {
       "name": "Holmer Calculator",
       "short_name": "Holmer",
-      "description": "Quick access to Holmer service code calculator",
       "url": "/gehadservice/?tab=holmer"
     }
   ]
