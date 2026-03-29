@@ -49,7 +49,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
             <h1 className="text-3xl font-bold text-white mb-2">Gehad Elhady</h1>
             <p className="text-slate-300">Service Solutions - Access Required</p>
           </div>
-
           <form onSubmit={handlePasswordSubmit} className="bg-slate-800 border border-slate-700 rounded-lg p-6 shadow-lg">
             <div className="mb-6">
               <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
@@ -64,13 +63,11 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
                 className="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition"
               />
             </div>
-
             {error && (
               <div className="mb-4 p-3 rounded-lg bg-red-500/20 border border-red-500/30">
                 <p className="text-red-400 text-sm">{error}</p>
               </div>
             )}
-
             <button
               type="submit"
               className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
@@ -79,7 +76,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
               Unlock Access
             </button>
           </form>
-
           <div className="mt-6 p-4 rounded-lg bg-slate-900 border border-slate-700">
             <p className="text-slate-400 text-sm text-center">
               Professional machinery service codes for Ropa and Holmer equipment
@@ -101,7 +97,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
           Logout
         </button>
       </div>
-
       <div
         className="flex-1 relative bg-cover bg-center flex flex-col justify-center items-center"
         style={{
@@ -135,7 +130,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
           </div>
         </div>
       </div>
-
       <div className="bg-slate-900 border-t border-slate-700 px-6 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
