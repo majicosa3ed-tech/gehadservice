@@ -16,18 +16,18 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  const {request} = event;
+  const { request } = event;
   const url = new URL(request.url);
   if (request.method !== 'GET' || url.protocol === 'chrome-extension:') return;
   event.respondWith(
-    caches.match(request).then(response => response || fetch(request).then(response => {
-      if (!response || response.status !== 200 || response.type === 'error') return response;
-      const responseToCache = response.clone();
-      caches.open(CACHE_NAME).then(cache => { cache.put(request, responseToCache); });
-      return response;
-    }).catch(error => {
-      console.log('Fetch error:', error);
-      return caches.match('/gehadservice/index.html');
-    }))
+    caches.match(request).then(response => response || fetch(request)
+      .then(response => {
+        if (!response || response.status !== 200 || response.type === 'error') return response;
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+        return response;
+      })
+      .catch(() => caches.match('/gehadservice/index.html'))
+    )
   );
 });
