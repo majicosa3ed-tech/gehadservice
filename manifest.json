@@ -1,9 +1,9 @@
 {
-  "name": "AGRO POWER - Service Codes",
-  "short_name": "ServiceCode",
+  "name": "Gehad Elhady - Service Codes",
+  "short_name": "GehadService",
   "description": "Professional machinery service code calculator for Ropa and Holmer equipment",
-  "start_url": "/servicecode/",
-  "scope": "/servicecode/",
+  "start_url": "/gehadservice/",
+  "scope": "/gehadservice/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#0f172a",
@@ -11,7 +11,7 @@
   "categories": ["productivity", "utilities"],
   "screenshots": [
     {
-      "src": "https://via.placeholder.com/540x720?text=ServiceCode",
+      "src": "https://via.placeholder.com/540x720?text=GehadService",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "narrow"
@@ -19,19 +19,19 @@
   ],
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%2310b981' width='192' height='192'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>SC</text></svg>",
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%2310b981' width='192' height='192'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>GE</text></svg>",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%2310b981' width='512' height='512'/><text x='50%' y='50%' font-size='200' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>SC</text></svg>",
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%2310b981' width='512' height='512'/><text x='50%' y='50%' font-size='200' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>GE</text></svg>",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23ffffff' width='192' height='192'/><circle cx='96' cy='96' r='80' fill='%2310b981'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>SC</text></svg>",
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23ffffff' width='192' height='192'/><circle cx='96' cy='96' r='80' fill='%2310b981'/><text x='50%' y='50%' font-size='80' fill='white' text-anchor='middle' dominant-baseline='central' font-weight='bold'>GE</text></svg>",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "maskable"
@@ -42,13 +42,13 @@
       "name": "Ropa Calculator",
       "short_name": "Ropa",
       "description": "Quick access to Ropa service code calculator",
-      "url": "/servicecode/?tab=ropa"
+      "url": "/gehadservice/?tab=ropa"
     },
     {
       "name": "Holmer Calculator",
       "short_name": "Holmer",
       "description": "Quick access to Holmer service code calculator",
-      "url": "/servicecode/?tab=holmer"
+      "url": "/gehadservice/?tab=holmer"
     }
   ]
 }
