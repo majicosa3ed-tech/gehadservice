@@ -36,7 +36,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
     setError('');
   };
 
-  // Password Protection Screen
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6">
@@ -91,10 +90,8 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
     );
   }
 
-  // Main Content Screen (after authentication)
   return (
     <div className="min-h-screen w-full flex flex-col">
-      {/* Logout Button */}
       <div className="bg-slate-900 border-b border-slate-700 px-6 py-3 flex justify-end">
         <button
           onClick={handleLogout}
@@ -105,7 +102,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
         </button>
       </div>
 
-      {/* Main Content */}
       <div
         className="flex-1 relative bg-cover bg-center flex flex-col justify-center items-center"
         style={{
@@ -140,7 +136,6 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="bg-slate-900 border-t border-slate-700 px-6 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
