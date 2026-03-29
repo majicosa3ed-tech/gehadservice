@@ -5,8 +5,12 @@ interface IntroPageProps {
   onNavigate: (page: 'holmer' | 'ropa') => void;
 }
 
+const AUTH_KEY = 'gehad_authenticated';
+
 export default function IntroPage({ onNavigate }: IntroPageProps) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return localStorage.getItem(AUTH_KEY) === 'true';
+  });
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -15,6 +19,7 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === DEFAULT_PASSWORD) {
+      localStorage.setItem(AUTH_KEY, 'true');
       setIsAuthenticated(true);
       setError('');
       setPassword('');
@@ -25,6 +30,7 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
   };
 
   const handleLogout = () => {
+    localStorage.removeItem(AUTH_KEY);
     setIsAuthenticated(false);
     setPassword('');
     setError('');
