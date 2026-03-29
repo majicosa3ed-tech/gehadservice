@@ -1,179 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0f172a">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>AGRO POWER - Offline Service Codes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gehad Elhady - Offline</title>
   <style>
-* {margin:0; padding:0; box-sizing:border-box;}
-body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:linear-gradient(to bottom right,#0f172a,#1e293b); color:#fff; min-height:100vh; overflow-x:hidden;}
-.container {max-width:1200px; margin:0 auto; padding:20px;}
-.password-screen {display:flex; justify-content:center; align-items:center; min-height:100vh; background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%); padding:20px;}
-.password-form {background:#1e293b; border:1px solid #334155; border-radius:12px; padding:40px; max-width:400px; width:100%; box-shadow:0 20px 25px -5px rgba(0,0,0,0.5);}
-.lock-icon {text-align:center; font-size:48px; margin-bottom:24px; opacity:0.8;}
-.password-form h1 {font-size:28px; margin-bottom:8px; text-align:center; color:#fbbf24; font-weight:700;}
-.password-form p {text-align:center; color:#cbd5e1; margin-bottom:24px; font-size:14px;}
-.form-group {margin-bottom:16px;}
-label {display:block; font-size:13px; font-weight:500; color:#cbd5e1; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;}
-input[type="password"],input[type="text"],select {width:100%; padding:12px 16px; background:#0f172a; border:1px solid #334155; border-radius:8px; color:#fff; font-size:14px; transition:all 0.3s ease;}
-input[type="password"]:focus,input[type="text"]:focus,select:focus {outline:none; border-color:#3b82f6; box-shadow:0 0 0 3px rgba(59,130,246,0.1);}
-.error-message {color:#ef4444; font-size:13px; margin-top:8px; display:none;}
-.error-message.show {display:block;}
-button {width:100%; padding:12px 16px; background:linear-gradient(135deg,#3b82f6 0%,#2563eb 100%); color:white; border:none; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s ease; text-transform:uppercase; letter-spacing:0.5px;}
-button:hover {transform:translateY(-2px); box-shadow:0 10px 15px -3px rgba(59,130,246,0.3);}
-button:active {transform:translateY(0);}
-.main-screen {min-height:100vh; padding:20px 0;}
-.header {text-align:center; margin-bottom:40px; padding-top:20px;}
-.header h1 {font-size:48px; color:#fbbf24; margin-bottom:8px; font-weight:700; letter-spacing:-1px;}
-.header p {font-size:18px; color:#cbd5e1;}
-.logout-btn {position:absolute; top:20px; right:20px; background:#475569; width:auto; padding:8px 16px; font-size:13px;}
-.logout-btn:hover {background:#334155;}
-.tabs {display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; background:#1e293b; padding:12px; border-radius:12px; border:1px solid #334155;}
-.tab-btn {background:transparent; border:1px solid #334155; color:#cbd5e1; padding:10px 16px; border-radius:6px; font-size:13px; font-weight:500; cursor:pointer; transition:all 0.3s ease; flex:1; min-width:100px;}
-.tab-btn:hover {background:#334155;}
-.tab-btn.active {background:linear-gradient(135deg,#10b981 0%,#059669 100%); border-color:#10b981; color:white;}
-.tab-content {display:none; background:#1e293b; border:1px solid #334155; border-radius:12px; padding:24px;}
-.tab-content.active {display:block;}
-.calculator {background:#0f172a; border:1px solid #334155; border-radius:8px; padding:16px; margin-bottom:16px;}
-.calc-input {margin-bottom:20px;}
-.calc-input label {display:block; margin-bottom:8px;}
-.calc-result {background:#0f172a; border:2px solid #10b981; border-radius:8px; padding:20px; margin-top:20px; text-align:center; display:none;}
-.result-label {font-size:12px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;}
-.result-code {font-size:32px; font-weight:700; color:#10b981; font-family:'Courier New',monospace; letter-spacing:2px;}
-.copy-btn {background:#10b981; width:auto; padding:8px 16px; font-size:13px; margin-top:12px;}
-.copy-btn:hover {background:#059669;}
-.mode-title {font-size:14px; color:#94a3b8; margin-bottom:12px; font-weight:500;}
-@media (max-width:768px) {.header h1 {font-size:32px;} .tabs {flex-direction:column;} .tab-btn {width:100%; margin:0;} .result-code {font-size:24px;} .password-form {padding:30px 20px;}}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif;
+           min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .card { text-align: center; padding: 2rem; max-width: 400px; }
+    h1 { font-size: 2rem; color: #f59e0b; margin-bottom: 0.5rem; }
+    p { color: #94a3b8; margin-top: 1rem; }
   </style>
 </head>
 <body>
-  <div id="passwordScreen" class="password-screen">
-    <div class="password-form">
-      <div class="lock-icon">🔒</div>
-      <h1>AGRO POWER</h1>
-      <p>Service Solutions - Access Required</p>
-      <form onsubmit="handlePasswordSubmit(event)">
-        <div class="form-group">
-          <label for="password">Enter Password</label>
-          <input type="password" id="password" placeholder="Enter access password" required>
-          <div id="errorMessage" class="error-message">Incorrect password</div>
-        </div>
-        <button type="submit">🔓 Unlock Access</button>
-      </form>
-    </div>
+  <div class="card">
+    <h1>Gehad Elhady</h1>
+    <p>You are currently offline.</p>
+    <p>Please check your connection and try again.</p>
   </div>
-  <div id="mainScreen" class="main-screen" style="display:none;">
-    <button class="logout-btn" onclick="handleLogout()">🚪 Logout</button>
-    <div class="container">
-      <div class="header">
-        <h1>AGRO POWER</h1>
-        <p>Machinery Service Solutions</p>
-      </div>
-      <div class="tabs">
-        <button class="tab-btn active" onclick="switchTab('ropa')">Ropa</button>
-        <button class="tab-btn" onclick="switchTab('t2')">T2</button>
-        <button class="tab-btn" onclick="switchTab('t3')">T3</button>
-        <button class="tab-btn" onclick="switchTab('tf2')">TF2</button>
-      </div>
-      <div id="ropa" class="tab-content active">
-        <h2 style="margin-bottom:24px;color:#3b82f6;">Ropa Service Codes (2 Modes)</h2>
-        <div class="calculator">
-          <div class="mode-title">Mode 1</div>
-          <div class="calc-input"><label>Enter PIN/Serial</label><input type="text" id="ropaInput1" placeholder="12345" oninput="calcRopa(1)"></div>
-          <div id="ropaResult1" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="ropaCode1">0000</div><button class="copy-btn" onclick="copy('ropaCode1')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">Mode 2</div>
-          <div class="calc-input"><label>Enter PIN/Serial</label><input type="text" id="ropaInput2" placeholder="12345" oninput="calcRopa(2)"></div>
-          <div id="ropaResult2" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="ropaCode2">0000</div><button class="copy-btn" onclick="copy('ropaCode2')">Copy</button></div>
-        </div>
-      </div>
-      <div id="t2" class="tab-content">
-        <h2 style="margin-bottom:24px;color:#10b981;">T2 (4 Modes)</h2>
-        <div class="calculator">
-          <div class="mode-title">T2_01</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t2Input1" maxlength="5" placeholder="12345" oninput="calcT2(1)"></div>
-          <div id="t2Result1" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t2Code1">0000</div><button class="copy-btn" onclick="copy('t2Code1')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">T2_02</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t2Input2" maxlength="5" placeholder="12345" oninput="calcT2(2)"></div>
-          <div id="t2Result2" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t2Code2">0000</div><button class="copy-btn" onclick="copy('t2Code2')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">T2_03</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t2Input3" maxlength="5" placeholder="12345" oninput="calcT2(3)"></div>
-          <div id="t2Result3" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t2Code3">0000</div><button class="copy-btn" onclick="copy('t2Code3')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">T2_03_1</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t2Input4" maxlength="5" placeholder="12345" oninput="calcT2(4)"></div>
-          <div id="t2Result4" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t2Code4">0000</div><button class="copy-btn" onclick="copy('t2Code4')">Copy</button></div>
-        </div>
-      </div>
-      <div id="t3" class="tab-content">
-        <h2 style="margin-bottom:24px;color:#10b981;">T3 (4 Modes)</h2>
-        <div class="calculator">
-          <div class="mode-title">T3_01</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t3Input1" maxlength="5" placeholder="12345" oninput="calcT3(1)"></div>
-          <div id="t3Result1" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t3Code1">0000</div><button class="copy-btn" onclick="copy('t3Code1')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">T3_02</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t3Input2" maxlength="5" placeholder="12345" oninput="calcT3(2)"></div>
-          <div id="t3Result2" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t3Code2">0000</div><button class="copy-btn" onclick="copy('t3Code2')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">T3_03</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t3Input3" maxlength="5" placeholder="12345" oninput="calcT3(3)"></div>
-          <div id="t3Result3" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t3Code3">0000</div><button class="copy-btn" onclick="copy('t3Code3')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">T3_03_1</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="t3Input4" maxlength="5" placeholder="12345" oninput="calcT3(4)"></div>
-          <div id="t3Result4" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="t3Code4">0000</div><button class="copy-btn" onclick="copy('t3Code4')">Copy</button></div>
-        </div>
-      </div>
-      <div id="tf2" class="tab-content">
-        <h2 style="margin-bottom:24px;color:#10b981;">TF2 (4 Modes)</h2>
-        <div class="calculator">
-          <div class="mode-title">TF2_01</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="tf2Input1" maxlength="5" placeholder="12345" oninput="calcTF2(1)"></div>
-          <div id="tf2Result1" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="tf2Code1">0000</div><button class="copy-btn" onclick="copy('tf2Code1')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">TF2_02</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="tf2Input2" maxlength="5" placeholder="12345" oninput="calcTF2(2)"></div>
-          <div id="tf2Result2" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="tf2Code2">0000</div><button class="copy-btn" onclick="copy('tf2Code2')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">TF2_03</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="tf2Input3" maxlength="5" placeholder="12345" oninput="calcTF2(3)"></div>
-          <div id="tf2Result3" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="tf2Code3">0000</div><button class="copy-btn" onclick="copy('tf2Code3')">Copy</button></div>
-        </div>
-        <div class="calculator">
-          <div class="mode-title">TF2_03_1</div>
-          <div class="calc-input"><label>5-Digit Code</label><input type="text" id="tf2Input4" maxlength="5" placeholder="12345" oninput="calcTF2(4)"></div>
-          <div id="tf2Result4" class="calc-result"><div class="result-label">Code</div><div class="result-code" id="tf2Code4">0000</div><button class="copy-btn" onclick="copy('tf2Code4')">Copy</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-const pwd='01005523310';let auth=false;
-function handlePasswordSubmit(e){e.preventDefault();const p=document.getElementById('password').value;if(p===pwd){auth=true;document.getElementById('passwordScreen').style.display='none';document.getElementById('mainScreen').style.display='block';document.getElementById('errorMessage').classList.remove('show');document.getElementById('password').value=''}else{document.getElementById('errorMessage').classList.add('show');document.getElementById('password').value=''}}
-function handleLogout(){auth=false;document.getElementById('mainScreen').style.display='none';document.getElementById('passwordScreen').style.display='flex';document.getElementById('password').value='';document.getElementById('errorMessage').classList.remove('show');}
-function switchTab(t){document.querySelectorAll('.tab-content').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.tab-btn').forEach(x=>x.classList.remove('active'));document.getElementById(t).classList.add('active');event.target.classList.add('active');}
-function valiAusg(v){const n=Math.trunc(v);let t=String(n);const l=t.length;if(n<=9)t='0000'+t;else if(n<=99)t='000'+t;else if(n<=999)t='00'+t;else if(n<=9999)t='0'+t;else if(n<=99999){if(l>=5)t='0'+t.substring(1,5);else t=t.padStart(5,'0')}else if(n>=100000){if(l>=6)t='0'+t.substring(2,6);else t=t.substring(l-5,l).padStart(5,'0')}else t='?????';return t;}
-function calcRopa(m){const i=document.getElementById('ropaInput'+m).value;if(!i){document.getElementById('ropaResult'+m).style.display='none';return}let c=0;for(let j=0;j<i.length;j++){const ch=i.charCodeAt(j);c=((c<<5)-c)+ch;c=c&0xFFFFFFFF}const r=Math.abs(c).toString().substring(0,4).padEnd(4,'0');document.getElementById('ropaCode'+m).textContent=r;document.getElementById('ropaResult'+m).style.display='block';}
-function calcT2(m){const i=document.getElementById('t2Input'+m).value;if(!i||i.length!==5){document.getElementById('t2Result'+m).style.display='none';return}const d=i.split('').map(c=>parseInt(c,10));const isZ=d.every(x=>x===0);if(isZ){document.getElementById('t2Result'+m).style.display='none';return}const sz=parseFloat(d.join(''));const sq=d.reduce((a,b)=>a+b,0);let res=0;if(m===1)res=(sz+101.0)/sq;else if(m===2)res=(sz*7.0)/58.0;else if(m===3)res=(sz*13.0)/sq;else if(m===4)res=(sz*31.0)/sq;const r=valiAusg(res);document.getElementById('t2Code'+m).textContent=r;document.getElementById('t2Result'+m).style.display='block';}
-function calcT3(m){const i=document.getElementById('t3Input'+m).value;if(!i||i.length!==5){document.getElementById('t3Result'+m).style.display='none';return}const d=i.split('').map(c=>parseInt(c,10));const isZ=d.every(x=>x===0);if(isZ){document.getElementById('t3Result'+m).style.display='none';return}const sz=parseFloat(d.join(''));const sq=d.reduce((a,b)=>a+b,0);let res=0;if(m===1)res=(sz+101.0)/sq;else if(m===2)res=(sz*7.0)/58.0;else if(m===3)res=(sz*13.0)/sq;else if(m===4)res=(sz*31.0)/sq;const r=valiAusg(res);document.getElementById('t3Code'+m).textContent=r;document.getElementById('t3Result'+m).style.display='block';}
-function calcTF2(m){const i=document.getElementById('tf2Input'+m).value;if(!i||i.length!==5){document.getElementById('tf2Result'+m).style.display='none';return}const d=i.split('').map(c=>parseInt(c,10));const isZ=d.every(x=>x===0);if(isZ){document.getElementById('tf2Result'+m).style.display='none';return}const sz=parseFloat(d.join(''));const sq=d.reduce((a,b)=>a+b,0);let res=0;if(m===1)res=(sz+101.0)/sq;else if(m===2)res=(sz*7.0)/58.0;else if(m===3)res=(sz*13.0)/sq;else if(m===4)res=(sz*31.0)/sq;const r=valiAusg(res);document.getElementById('tf2Code'+m).textContent=r;document.getElementById('tf2Result'+m).style.display='block';}
-function copy(id){const e=document.getElementById(id);const t=e.textContent;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>{const b=event.target;const o=b.textContent;b.textContent='✓ Copied!';setTimeout(()=>{b.textContent=o},2000)})}else{const inp=document.createElement('input');inp.value=t;document.body.appendChild(inp);inp.select();document.execCommand('copy');document.body.removeChild(inp);const b=event.target;const o=b.textContent;b.textContent='✓ Copied!';setTimeout(()=>{b.textContent=o},2000)}}
-document.addEventListener('DOMContentLoaded',()=>{document.getElementById('password').focus();});
-  </script>
 </body>
 </html>
