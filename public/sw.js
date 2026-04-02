@@ -4,7 +4,7 @@ const ASSETS_TO_CACHE = [
   '/gehadservice/',
   '/gehadservice/index.html',
   '/gehadservice/manifest.json',
-  '/gehadservice/offline-app.html'
+  
 ];
 
 self.addEventListener('install', (event) => {
