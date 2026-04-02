@@ -1,14 +1,19 @@
 {
-  "name": "Gehad Elhady Service",
-  "short_name": "GehadService",
+  "name": "Gehad Service",
+  "short_name": "Gehad",
   "start_url": "/gehadservice/",
-  "scope": "/gehadservice/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#10b981",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/gehadservice/intro.jpg",
+      "src": "intro.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "intro.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any maskable"
