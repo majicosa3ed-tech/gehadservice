@@ -38,7 +38,7 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6">
+      <div className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6 relative">
         <div className="max-w-md w-full">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
@@ -82,12 +82,33 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
             </p>
           </div>
         </div>
+
+        {/* صندوق حقوق المطور - شاشة تسجيل الدخول */}
+        <div 
+          style={{
+            position: 'fixed',
+            bottom: '15px',
+            left: '15px',
+            backgroundColor: 'rgba(15, 23, 42, 0.85)',
+            color: '#e2e8f0',
+            padding: '10px 15px',
+            borderRadius: '8px',
+            fontSize: '12px',
+            fontFamily: 'sans-serif',
+            zIndex: 50,
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            lineHeight: '1.5'
+          }}
+        >
+          Developed and Programmed by <br />
+          <strong>Mohamed Saeed</strong> +201011126104
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen w-full flex flex-col">
+    <div className="min-h-screen w-full flex flex-col relative">
       <div className="bg-slate-900 border-b border-slate-700 px-6 py-3 flex justify-end">
         <button
           onClick={handleLogout}
@@ -147,6 +168,27 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* صندوق حقوق المطور - الشاشة الرئيسية */}
+      <div 
+        style={{
+          position: 'fixed',
+          bottom: '15px',
+          left: '15px',
+          backgroundColor: 'rgba(15, 23, 42, 0.85)',
+          color: '#e2e8f0',
+          padding: '10px 15px',
+          borderRadius: '8px',
+          fontSize: '12px',
+          fontFamily: 'sans-serif',
+          zIndex: 50,
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          lineHeight: '1.5'
+        }}
+      >
+        Developed and Programmed by <br />
+        <strong>Mohamed Saeed</strong> +201011126104
       </div>
     </div>
   );
