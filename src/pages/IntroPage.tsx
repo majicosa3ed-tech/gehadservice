@@ -187,8 +187,8 @@ export default function IntroPage({ onNavigate }: IntroPageProps) {
           lineHeight: '1.5'
         }}
       >
-        Developed and Programmed by <br />
-        <strong>Mohamed Saeed</strong> +201011126104
+       <br />
+        <strong></strong> +201011126104
       </div>
     </div>
   );
