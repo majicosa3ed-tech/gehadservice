@@ -35,10 +35,10 @@ function App() {
         pointerEvents: 'none',
       }}>
         <span style={{ fontSize: '11px', color: '#64748b' }}>Developed by</span>
-        <span style={{ fontSize: '13px', fontWeight: 600, color: '#10b981' }}>
+        <span style={{ fontSize: '13px', fontWeight: 600, color: '#10b981', letterSpacing: '0.03em' }}>
           Mohamed Saeed
         </span>
-        <span style={{ fontSize: '11px', color: '#94a3b8' }}>
+        <span style={{ fontSize: '11px', color: '#94a3b8', letterSpacing: '0.02em' }}>
           +201011126104
         </span>
       </div>
